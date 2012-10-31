@@ -1,0 +1,3 @@
+The camera image processing program, written in C# that finds the circles of the robots and the ball. Uses only color filtering currently.
+
+To run this you must add the references to the AForge libraries ( AForge.dll, AForge.Imaging.dll, AForge.Video.DirectShow.dll, AForge.Video.dll ), located in the Robocup_Processing folder.
