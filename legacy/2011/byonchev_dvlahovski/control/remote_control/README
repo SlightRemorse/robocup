@@ -1,0 +1,1 @@
+A console application that detects up, down, left, right arrow keys and sends the command through a serial port. Used to move the robot manually.
