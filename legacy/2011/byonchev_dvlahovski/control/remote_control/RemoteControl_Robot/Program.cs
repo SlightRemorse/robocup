@@ -7,7 +7,7 @@ namespace RemoteControl_Robot
     {
         static void Main(string[] args)
         {
-            SerialPort device = new SerialPort("COM6", 9600);
+            SerialPort device = new SerialPort("COM5", 9600);
 
             device.Open();
 
@@ -15,43 +15,43 @@ namespace RemoteControl_Robot
             {
                 int command = 0;
 
-                try
+                try 
                 {
                     switch (Console.ReadKey().Key)
                     {
                         case ConsoleKey.LeftArrow:
-						{
-							command = 1;
-							break;
-						}
+                        {
+                            command = 24;
+                            break;
+                        }
 
                         case ConsoleKey.RightArrow:
-						{
-							command = 2;
+                        {
+                            command = 40;
 
-							break;
-						}
+                            break;
+                        }
 
                         case ConsoleKey.UpArrow:
-						{
-							command = 3;
+                        {
+                            command = 56;
 
-							break;
-						}
+                            break;
+                        }
 
                         case ConsoleKey.DownArrow:
-						{
-							command = 4;
+                        {
+                            command = 52;
 
-							break;
-						}
+                            break;
+                        }
 
-                        default: // Any key pressed -> Stop
-						{
-							command = 0;
-							break;
+                        default:
+                        {
+                            command = 60;
+                            break;
 
-						}
+                        }
                     }
                 }
                 catch (Exception ex)
